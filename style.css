@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 22px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1e1e;
+    color: whitesmoke;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between; /* Separates left and right sections */
+    align-items: center;
+    padding: 3px 20px;
+    background-color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav-right a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+    color: #acacac;
+}
+
+.nav-left {
+    font-family: 'Oleo Script', cursive;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* Navigation Bar */
+
+/* Home section */
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    padding: 0px 150px;
+    background: url("back.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-part {
+    text-align: left;
+    margin-top: -180px;
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.999); /* Shadow facing down-left */
+}
+
+.main-part p {
+    font-size: 20px;
+}
+
+.logo {
+    margin-top: -160px;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    box-shadow: -10px 10px 15px rgba(0, 0, 0); /* Shadow around the logo */
+}
+
+/* Style for the button container */
+.button-container {
+    padding-top: 40px;
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Style for individual circular buttons */
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;  /* Width of the circle */
+    height: 40px; /* Height of the circle */
+    border-radius: 50%; /* Make it circular */
+    background-color: #2a2a2a; /* Darker background color */
+    box-shadow: -6px 6px 10px rgb(0, 0, 0); /* Shadow around the logo */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hover effect */
+}
+
+.button img {
+    width: 25px;  /* Adjust the size of the logo */
+    height: 25px; /* Adjust the size of the logo */
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #444444; /* Lighter background on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Home section */
+
+/* Portofolio */
+
+#showcase {
+    padding-top: 30px;
+}
+
+#showcase h2 {
+    padding: 6px 0px;
+    text-align: center;
+    font-size: 50px;
+    background-color: #161515;
+}
+
+.photo-container {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap : 30px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05); 
+}
+
+/* Portofolio */
+
+/* Footer */
+
+footer {
+    background-color: #161515; /* Dark background for footer */
+    color: whitesmoke;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit the content width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0px 0;
+    font-size: 18px;
+}
+
+/* Footer */
