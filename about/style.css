@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 22px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1e1e;
+    color: whitesmoke;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between; /* Separates left and right sections */
+    align-items: center;
+    padding: 3px 20px;
+    background-color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav-right a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+    color: #acacac;
+}
+
+.nav-left {
+    font-family: 'Oleo Script', cursive;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* Navigation Bar */
+
+/* Home section */
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    padding: 0px 150px;
+    background: url("back.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-part {
+    text-align: left;
+    margin-top: -140px;
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.999); /* Shadow facing down-left */
+}
+
+.main-part p {
+    font-size: 20px;
+}
+
+.logo {
+    margin-top: -160px;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    box-shadow: -10px 10px 15px rgba(0, 0, 0); /* Shadow around the logo */
+}
+/* Home section */
+
+/* About section */
+
+#about {
+    padding-top: 30px;
+}
+
+#about h2 {
+    padding: 6px 20px;
+    text-align: left;
+    font-size: 50px;
+    background-color: #161515;
+    margin-bottom: 20px;
+}
+
+.yapping-session {
+    padding: 30px 20px;
+    padding-bottom: 30px;
+}
+
+.yapping-session p {
+    margin-bottom: 20px;
+  }
+/* About section */
+
+/* portofolio section */
+
+#portofolio {
+    padding-top: 30px;
+}
+
+#portofolio h2 {
+    padding: 6px 20px;
+    text-align: left;
+    font-size: 50px;
+    background-color: #161515;
+}
+
+.yapping-session {
+    padding: 30px 20px;
+    padding-bottom: 30px;
+}
+
+.yapping-session a {
+    font-weight: bold;
+    transition: color 0.2s ease;
+    color: blue;
+    text-decoration: none;
+}
+
+.yapping-session a:hover {
+    color: #acacac;
+}
+
+.yapping-session p {
+    margin-top: 20px;
+  }
+/* Portofolio section */
+
+/* Contacts */
+
+#contacts {
+    padding-top: 30px;
+}
+
+#contacts h2 {
+    padding: 6px 20px;
+    text-align: left;
+    font-size: 30px;
+    background-color: #161515;
+}
+
+.contacts {
+    padding: 30px 20px;
+    padding-bottom: 30px;
+}
+
+.contacts p {
+    padding-bottom: 20px;
+}
+
+.contacts ul {
+    padding-left: 20px;
+}
+/* Contacts */
+
+
+/* Footer */
+
+footer {
+    background-color: #161515; /* Dark background for footer */
+    color: whitesmoke;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit the content width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0px 0;
+    font-size: 18px;
+}
+
+/* Footer */
